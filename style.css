@@ -1,4 +1,11 @@
+@font-face {
+    font-family:Apple;
+    src: url(./sf-pro-display_regular.woff2);
+}
+
+
 *{
+    font-family:Apple;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,31 +14,65 @@ html,body{
     height: 100%;
     width: 100%;
 }
-#parent{
+#main{
     height: 100%;
     width: 100%;
     background-color: black;
+}
+#nav{
+    height: 55px;
+    width:100%;
+    background-color: rgb(66, 59, 51);
     display: flex;
-    align-items:end;
-    justify-content:end;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+}
+#nav h4{
+    color:white;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+#center{
+    height:100%;
+    width: 100%;
+    background-image: url(./iphone.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding:50px;
 
 }
-#box1{
-    height:100px;
-    width:100px;
-    background-color: aqua;
+#center h1{
+    color:white;
+    font-size: 70px;
+    font-weight: 600;
+    font-family:Apple;
 
 }
-#box2{
-    height: 100px;
-    width:100px;
-    background-color: rgb(16, 168, 46);
-
-
+#center h5{
+    color: white;
+    font-size: 35px;
+    font-weight: 400;
 }
-#box3{
-    height: 100px;
-    width:100px;
-    background-color: rgb(188, 201, 13);
-
+#links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+#bttn{
+    background-color: royalblue;
+    color: white;
+    padding: 13px 20px;
+    border-radius:50px;
+    border:none;
+}
+#btn{
+    background-color: transparent;
+    color: white;
+    padding: 13px 20px;
+    border-radius:50px;
+    border:1.5px solid royalblue;
 }
